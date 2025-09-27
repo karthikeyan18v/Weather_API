@@ -71,5 +71,5 @@ curl "http://localhost:3000/weather/forecast?location=Chennai&days=5"
 ![Current Weather](docs/current.png)
 
 ### 📅 5-Day Forecast
-![Forecast](docs/forecast.png)
+![Forecast](docs/forcast.png)
 
