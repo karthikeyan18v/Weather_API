@@ -12,6 +12,24 @@ A small, production-style REST API that returns **live weather data** using [Ope
 
 ---
 
+## Setup Instructions
+
+```bash
+git clone https://github.com/<your-username>/weather-api.git
+cd weather-api
+
+npm install
+npm install express dotenv helmet morgan express-rate-limit
+npm run dev
+npm start
+
+```
+## ENV file
+PORT=3000
+CACHE_TTL_SECONDS=300
+RATE_LIMIT_PER_MIN=60
+
+
 ## ✨ Endpoints
 
 | Method | Endpoint                                                    | Description                                   |
@@ -39,3 +57,19 @@ curl "http://localhost:3000/weather/current?location=13.0827,80.2707"
 
 # 5-day forecast
 curl "http://localhost:3000/weather/forecast?location=Chennai&days=5"
+```
+## OUTPUT
+## 📸 Screenshots
+
+### 🩺 Health Endpoint
+![Health Endpoint](docs/health.png)
+
+### 🌍 Location Search
+![Location Search](docs/search.png)
+
+### 🌤 Current Weather
+![Current Weather](docs/current.png)
+
+### 📅 5-Day Forecast
+![Forecast](docs/forecast.png)
+
